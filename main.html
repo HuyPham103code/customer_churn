@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Churn Prediction</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Churn Prediction</h1>
+        <form id="churn-form">
+            <!-- Credit Score -->
+            <label for="creditScore">Credit Score:</label>
+            <input type="number" id="creditScore" name="creditScore" required>
+            
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <!-- Tenure -->
+            <label for="tenure">Tenure:</label>
+            <input type="number" id="tenure" name="tenure" required>
+            
+            <!-- Has Credit Card -->
+            <label for="hasCrCard">Has Credit Card:</label>
+            <input type="checkbox" id="hasCrCard" name="hasCrCard">
+            
+            <!-- Is Active Member -->
+            <label for="isActiveMember">Is Active Member:</label>
+            <input type="checkbox" id="isActiveMember" name="isActiveMember">
+            
+            <!-- Estimated Salary -->
+            <label for="estimatedSalary">Estimated Salary:</label>
+            <input type="number" step="0.01" id="estimatedSalary" name="estimatedSalary" required>
+            
+            <!-- Geography -->
+            <label for="geography">Geography:</label>
+            <select id="geography" name="geography">
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+            </select>
+            
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            
+            <!-- Total Products -->
+            <label for="totalProducts">Total Products:</label>
+            <input type="number" id="totalProducts" name="totalProducts" required>
+            
+            <!-- Account Balance -->
+            <label for="accountBalance">Account Balance:</label>
+            <input type="number" step="0.01" id="accountBalance" name="accountBalance" required>
+            
+            <!-- Submit Button -->
+            <button type="submit">Predict Churn</button>
+        </form>
+        
+        <!-- Result Output -->
+        <div id="prediction-result"></div>
+    </div>
+
+    <!-- JavaScript to handle form submission -->
+    <script src="main.js"></script>
+</body>
+</html>
